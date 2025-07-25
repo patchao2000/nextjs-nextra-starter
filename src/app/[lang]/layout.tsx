@@ -27,26 +27,26 @@ export const metadata = {
 
 const repo = 'https://github.com/pdsuwwz/nextjs-nextra-starter'
 
-const CustomBanner = async ({ lang }: I18nLangAsyncProps) => {
-  const { t } = await useServerLocale(lang)
-  return (
-    <Banner
-      storageKey="starter-banner"
-    >
-      <div className="flex justify-center items-center gap-1">
-        { t('banner.title') }
-        {' '}
-        <a
-          className="max-sm:hidden text-warning hover:underline"
-          target="_blank"
-          href={repo}
-        >
-          { t('banner.more') }
-        </a>
-      </div>
-    </Banner>
-  )
-}
+// const CustomBanner = async ({ lang }: I18nLangAsyncProps) => {
+//   const { t } = await useServerLocale(lang)
+//   return (
+//     <Banner
+//       storageKey="starter-banner"
+//     >
+//       <div className="flex justify-center items-center gap-1">
+//         { t('banner.title') }
+//         {' '}
+//         <a
+//           className="max-sm:hidden text-warning hover:underline"
+//           target="_blank"
+//           href={repo}
+//         >
+//           { t('banner.more') }
+//         </a>
+//       </div>
+//     </Banner>
+//   )
+// }
 
 
 const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
@@ -68,23 +68,23 @@ const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
   )
 }
 
-const BaiduTrack = () => {
-  return (
-    <>
-      <Script strategy="afterInteractive">
-        {`
-          var _hmt = _hmt || [];
-          (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?d5ad5e04e6af914c01767926567602be";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-          })();
-        `}
-      </Script>
-    </>
-  )
-}
+// const BaiduTrack = () => {
+//   return (
+//     <>
+//       <Script strategy="afterInteractive">
+//         {`
+//           var _hmt = _hmt || [];
+//           (function() {
+//             var hm = document.createElement("script");
+//             hm.src = "https://hm.baidu.com/hm.js?d5ad5e04e6af914c01767926567602be";
+//             var s = document.getElementsByTagName("script")[0];
+//             s.parentNode.insertBefore(hm, s);
+//           })();
+//         `}
+//       </Script>
+//     </>
+//   )
+// }
 
 
 interface Props {
@@ -130,9 +130,9 @@ export default async function RootLayout({ children, params }: Props) {
           disableTransitionOnChange
         >
           <Layout
-            banner={
-              <CustomBanner lang={lang} />
-            }
+            // banner={
+            //   <CustomBanner lang={lang} />
+            // }
             navbar={
               <CustomNavbar lang={lang} />
             }
@@ -162,7 +162,7 @@ export default async function RootLayout({ children, params }: Props) {
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId="G-VCR6017LB8" />
-      <BaiduTrack />
     </html>
   )
 }
+// <BaiduTrack />
