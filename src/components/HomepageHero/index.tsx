@@ -77,7 +77,7 @@ export default function HomepageHero() {
         </a>
       </div> */}
       <div className="relative z-1 pb-10 md:pb-[100px]">
-        <Section
+        {/* <Section
           title="Tech Stack"
           titleProps={{
             disabledAnimation: false,
@@ -105,7 +105,7 @@ export default function HomepageHero() {
               <StackItem className="icon-[line-md--iconify1]" />
             </Marquee>
           </div>
-        </Section>
+        </Section> */}
         <Section
           title="Features"
           description={t('featuresDesc')}

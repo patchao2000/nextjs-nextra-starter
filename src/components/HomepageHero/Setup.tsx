@@ -17,16 +17,6 @@ export function SetupHero(props: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.badgeContainer}>
-          <a
-            className={styles.badge}
-            href="https://github.com/pdsuwwz/nextjs-nextra-starter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('badgeTitle')}
-          </a>
-        </div>
         <h1 className={styles.headline}>
           <MotionWrapperFlash
             disabledAnimation={false}

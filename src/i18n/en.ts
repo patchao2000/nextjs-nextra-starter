@@ -43,18 +43,18 @@ export default {
       title: 'Code Standards',
       description: 'Adheres to best practices with code standards and uses ESLint for quality checks and consistency.',
     },
-    {
-      title: 'Dark Mode',
-      description: 'Supports dark mode for an enhanced nighttime experience.',
-    },
-    {
-      title: 'Rich Components & Extensible Support',
-      description: 'Offers a range of built-in components and supports flexible custom extensions.',
-    },
-    {
-      title: 'Lightweight Design',
-      description: 'Employs a lightweight design approach, streamlining project setup to focus on content creation.',
-    },
+    // {
+    //   title: 'Dark Mode',
+    //   description: 'Supports dark mode for an enhanced nighttime experience.',
+    // },
+    // {
+    //   title: 'Rich Components & Extensible Support',
+    //   description: 'Offers a range of built-in components and supports flexible custom extensions.',
+    // },
+    // {
+    //   title: 'Lightweight Design',
+    //   description: 'Employs a lightweight design approach, streamlining project setup to focus on content creation.',
+    // },
   ],
   featuresDesc: 'Easily build modern applications and kickstart your development process.',
   faqs: [
