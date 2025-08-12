@@ -18,7 +18,7 @@ export const Card = ({
       className={cn(
         'relative rounded-2xl h-full w-full p-4 overflow-hidden',
         'border duration-200',
-        'bg-neutral-50 dark:bg-neutral-800',
+        'bg-white dark:bg-neutral-800',
         'border-neutral-200/[0.5] dark:border-white/[0.1]',
         'group-hover:border-neutral-300/[0.6] dark:group-hover:border-primary/[0.8]',
         className,

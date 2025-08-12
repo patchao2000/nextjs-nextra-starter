@@ -2,6 +2,16 @@
 
 .container {
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('/img/woman-3597095.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  aspect-ratio: 2.35/1;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 .content {
@@ -12,7 +22,8 @@
   padding-right: max(env(safe-area-inset-right), 1.5rem);
   max-width: 90rem;
   text-align: center;
-  @apply pb-12 md:pb-[100px];
+  width: 100%;
+  @apply pb-12 md:pb-[100px] pt-16 md:pt-20;
 }
 
 .badgeContainer {
@@ -65,7 +76,7 @@
 
 .headline {
   margin-top: 1.5rem;
-  background-image: linear-gradient(146deg, #000, #5e6265);
+  background-image: linear-gradient(146deg, #ffffff, #f0f0f0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -75,9 +86,11 @@
   font-feature-settings: initial;
   line-height: 1.05;
   letter-spacing: -0.12rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
   :global(.dark) & {
-    background-image: linear-gradient(146deg, #fff, #81878b);
+    background-image: linear-gradient(146deg, #ffffff, #e0e0e0);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   @apply flex max-lg:flex max-lg:flex-col items-center justify-center;

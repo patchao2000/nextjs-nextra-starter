@@ -55,7 +55,7 @@ export function SetupHero(props: Props) {
 
         <div className={clsx([
           styles.subtitle,
-          'text-neutral-500 dark:text-neutral-300',
+          'text-white/90 dark:text-white/95',
         ])}
         >
           Template made
@@ -132,7 +132,7 @@ export function SetupHero(props: Props) {
             </Button>
           </div>
         </div>
-      </div>
+        </div>
     </div>
   )
 }

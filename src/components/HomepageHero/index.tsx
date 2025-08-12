@@ -3,7 +3,6 @@
 import { useTheme } from 'nextra-theme-docs'
 import { useMemo } from 'react'
 import Marquee from 'react-fast-marquee'
-import { PanelParticles } from '@/components/PanelParticles'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { useLocale } from '@/hooks'
@@ -60,7 +59,6 @@ export default function HomepageHero() {
 
   return (
     <>
-      <PanelParticles />
       <SetupHero />
       {/* <div className="relative top-[-18px] mb-[-10px] flex justify-center py-[0px] z-2">
         <a
